@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skip-trace-people-finder"
+version = "0.1.0"
+description = "Python SDK for the Skip Trace People Finder Apify actor — locate hard-to-find people in the US by name, address, or phone. Returns full names, age, current and previous addresses, phone numbers, emails, relatives, aliases, and a public profile link. Two tiers: basic ($7/1K) and premium ($15/1K deep profile with line types, address history, net-worth estimate). Bulk input, automatic residential-proxy fallback, no API key for the source. Lawful B2B use only — not for FCRA decisions."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "ApiVault Labs" }]
+keywords = [
+    "skip-trace", "skip-tracing", "skiptrace",
+    "people-search", "people-finder", "people-lookup",
+    "person-search", "find-people", "locate-people",
+    "reverse-phone-lookup", "phone-lookup", "reverse-phone",
+    "address-lookup", "reverse-address", "property-owner-lookup",
+    "contact-finder", "contact-enrichment", "contact-data",
+    "lead-generation", "b2b-lead-gen", "b2b-prospecting",
+    "real-estate-leads", "real-estate-investing", "motivated-sellers",
+    "debt-collection", "collections", "asset-location",
+    "process-serving", "private-investigator", "osint",
+    "background-data", "public-records", "people-data",
+    "whitepages-alternative", "spokeo-alternative",
+    "beenverified-alternative", "truepeoplesearch-alternative",
+    "batchskiptracing-alternative",
+    "web-scraping", "apify", "apify-actor", "python-sdk",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/apivault-labs/skip-trace-people-finder-python"
+Documentation = "https://github.com/apivault-labs/skip-trace-people-finder-python#readme"
+"Apify Actor" = "https://apify.com/apivault_labs/skip-trace-people-finder"
+"Bug Tracker" = "https://github.com/apivault-labs/skip-trace-people-finder-python/issues"
+
+[tool.setuptools.packages.find]
+include = ["skip_trace*"]
