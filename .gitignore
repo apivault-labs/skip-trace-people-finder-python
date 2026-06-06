@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.env
+_gh_token.txt
+_npm_token.txt
+*.csv
+build/
+dist/
