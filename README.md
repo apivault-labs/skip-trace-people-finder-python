@@ -122,4 +122,4 @@ See the [`examples/`](examples) folder:
 
 ## Keywords
 
-`skip-trace` `skip-tracing` `people-search` `people-finder` `reverse-phone-lookup` `address-lookup` `contact-finder` `lead-generation` `real-estate-leads` `debt-collection` `whitepages-alternative` `spokeo-alternative` `beenverified-alternative` `truepeoplesearch-alternative` `apify` `python-sdk`
+`skip-trace` `skip-tracing` `people-search` `people-finder` `reverse-phone-lookup` `address-lookup` `contact-finder` `lead-generation` `real-estate-leads` `debt-collection` `whitepages-alternative` `people-search-alternative` `beenverified-alternative` `truepeoplesearch-alternative` `apify` `python-sdk`
