@@ -21,7 +21,7 @@ keywords = [
     "debt-collection", "collections", "asset-location",
     "process-serving", "private-investigator", "osint",
     "background-data", "public-records", "people-data",
-    "whitepages-alternative", "spokeo-alternative",
+    "whitepages-alternative", "people-search-alternative",
     "beenverified-alternative", "truepeoplesearch-alternative",
     "batchskiptracing-alternative",
     "web-scraping", "apify", "apify-actor", "python-sdk",
