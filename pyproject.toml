@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skip-trace-people-finder"
-version = "0.1.0"
-description = "Python SDK for the Skip Trace People Finder Apify actor — locate hard-to-find people in the US by name, address, or phone. Returns full names, age, current and previous addresses, phone numbers, emails, relatives, aliases, and a public profile link. Two tiers: basic ($7/1K) and premium ($15/1K deep profile with line types, address history, net-worth estimate). Bulk input, automatic residential-proxy fallback, no API key for the source. Lawful B2B use only — not for FCRA decisions."
+version = "0.2.0"
+description = "Thin Python SDK for the hosted Skip Trace Apify Actor. Search authorized US public-record data by name, address, phone or email with compact, flat or full output. Lawful use only; not for FCRA-regulated decisions."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "ApiVault Labs" }]

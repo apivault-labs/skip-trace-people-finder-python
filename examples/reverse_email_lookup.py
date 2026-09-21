@@ -1,11 +1,11 @@
-"""Authorized reverse-address lookup with fictional sample data."""
+"""Authorized reverse-email lookup with a fictional sample address."""
 
 from skip_trace import SkipTraceClient
 
 
 client = SkipTraceClient()
-rows = client.search_by_address(
-    "123 Example Ave; Springfield, IL 62704",
+rows = client.search_by_email(
+    "jane@example.com",
     max_results=3,
     output_preset="contacts",
 )

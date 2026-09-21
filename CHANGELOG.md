@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+- Synchronized the client with the current name, address, phone and email workflows.
+- Added Contacts, Flat and Full output presets plus SUMMARY/ERRORS helpers.
+- Replaced the retired two-tier pricing copy with the current `$6.50/1K` matched-record model.
+- Added a review-first contact-enrichment guide and removed outdated result claims.
+
 ## 0.1.0
 
 - Initial release.

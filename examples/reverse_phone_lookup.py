@@ -1,30 +1,14 @@
-"""
-Reverse phone lookup: identify the owner(s) of US phone numbers.
-
-    export APIFY_API_TOKEN=apify_api_xxxxxx
-    python examples/reverse_phone_lookup.py
-"""
+"""Reverse lookup using a reserved fictional US phone number."""
 
 from skip_trace import SkipTraceClient
 
 
-def main() -> None:
-    client = SkipTraceClient()
+client = SkipTraceClient()
+rows = client.search_by_phone(
+    "(202) 555-0182",
+    max_results=3,
+    output_preset="contacts",
+)
 
-    phones = [
-        "(214) 321-5304",
-        "(212) 555-0148",
-    ]
-
-    print(f"Estimated cost: ${client.estimate_cost(len(phones) * 5, 'basic')}")
-
-    owners = client.search_by_phone(*phones, tier="basic", max_results=5)
-
-    print(f"\n{len(owners)} records\n")
-    for p in owners:
-        print(f"{p.get('name', '?')} — {p.get('currentAddress', 'n/a')}")
-        print(f"  phone: {client.best_phone(p)}")
-
-
-if __name__ == "__main__":
-    main()
+print("matched rows:", len(client.filter_matches(rows)))
+print("diagnostics:", len(client.last_errors()))

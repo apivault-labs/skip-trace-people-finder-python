@@ -1,31 +1,14 @@
-"""
-Quickstart: look up a person by name and print the matches.
-
-    pip install -r requirements.txt
-    export APIFY_API_TOKEN=apify_api_xxxxxx
-    python examples/quickstart.py
-"""
+"""Fictional name lookup with compact, review-ready output."""
 
 from skip_trace import SkipTraceClient
 
 
-def main() -> None:
-    client = SkipTraceClient()  # picks up APIFY_API_TOKEN from env
+client = SkipTraceClient()
+rows = client.search_by_name(
+    "Jane Example; Springfield, IL",
+    max_results=3,
+    output_preset="contacts",
+)
 
-    people = client.search_by_name(
-        "James E Whitsitt",
-        tier="basic",
-        max_results=5,
-    )
-
-    print(f"\nFound {len(people)} matches\n")
-    for p in people:
-        print(f"{p.get('name', '?')}  (age {p.get('age', '?')})")
-        print(f"  address: {p.get('currentAddress') or p.get('address', 'n/a')}")
-        print(f"  phone:   {client.best_phone(p) or 'n/a'}")
-        print(f"  profile: {p.get('profileUrl', 'n/a')}")
-        print()
-
-
-if __name__ == "__main__":
-    main()
+print("matched rows:", len(client.filter_matches(rows)))
+print("summary status:", client.last_summary().get("status"))
