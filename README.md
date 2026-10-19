@@ -90,3 +90,15 @@ Read the [contact-enrichment playbook](guides/review-first-contact-enrichment.md
 ## License
 
 [MIT](LICENSE)
+
+<!-- apivault-integrations:start -->
+## Hosted Actor and integrations
+
+- [Run Skip Trace — People Search, Phones & Emails API on Apify](https://apify.com/apivault_labs/skip-trace-people-finder).
+- [Current pricing and usage terms](https://apify.com/apivault_labs/skip-trace-people-finder/pricing).
+- [n8n community package: n8n-nodes-apivault-skip-trace](https://www.npmjs.com/package/n8n-nodes-apivault-skip-trace).
+- [n8n source and usage](https://github.com/apivault-labs/n8n-nodes-apivault-skip-trace).
+- [n8n source and usage](https://github.com/apivault-labs/apivault-labs/tree/main/community-nodes/n8n-nodes-apivault-skip-trace).
+
+An Apify account and API token are required. Hosted Actor/platform charges apply. npm publication is not n8n verification or confirmation of n8n Cloud availability.
+<!-- apivault-integrations:end -->
